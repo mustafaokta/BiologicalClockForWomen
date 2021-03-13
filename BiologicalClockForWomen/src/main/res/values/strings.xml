@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BiologicalClockForWomen</string>
+    <string name="username_required">user name required</string>
+    <string name="gecersiz_cycle_value">23-36</string>
+</resources>

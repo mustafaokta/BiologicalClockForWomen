@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.applandeo.materialcalendarsampleapp.MainActivity">
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:abbreviationsBarColor="#303F9F"
+        app:abbreviationsLabelsColor="@android:color/white"
+        app:daysLabelsColor="@android:color/white"
+        app:headerColor="#1A237E"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pagesColor="#3F51B5"
+        app:eventsEnabled="false"
+        app:selectionColor="@android:color/white"
+        app:selectionLabelColor="#3F51B5"
+        app:anotherMonthsDaysLabelsColor="#3F51B5"
+        app:todayLabelColor="#AEEA00"
+        app:todayTypeface="@font/sample_custom_font_bold"
+        app:typeface="@font/sample_custom_font"
+        app:type="many_days_picker" />
+
+    <Button
+        android:id="@+id/getDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/calendarView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
